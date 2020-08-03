@@ -42,6 +42,10 @@ include 'buildAdapterCmake'
 project(':buildAdapterCmake').projectDir = file('subprojects/build-adapter-cmake')
 project(':buildAdapterCmake').buildFileName = 'build-adapter-cmake.gradle'
 
+include 'buildAdapterXcode'
+project(':buildAdapterXcode').projectDir = file('subprojects/build-adapter-xcode')
+project(':buildAdapterXcode').buildFileName = 'build-adapter-xcode.gradle'
+
 include 'coreExec'
 project(':coreExec').projectDir = file('subprojects/core-exec')
 project(':coreExec').buildFileName = 'core-exec.gradle'
